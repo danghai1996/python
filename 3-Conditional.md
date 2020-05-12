@@ -171,4 +171,4 @@ if 0 < x and x < 10:
 ```
 
 # `Try - except` để bắt ngoại lệ 
-## Cách hoạt đọng `try - except`
+## Cách hoạt động `try - except`
