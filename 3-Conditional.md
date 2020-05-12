@@ -172,3 +172,27 @@ if 0 < x and x < 10:
 
 # `Try - except` để bắt ngoại lệ 
 ## Cách hoạt động `try - except`
+**Ví dụ:** chương trình đổi nhiệt độ từ F sang C
+```py
+inp = input('Enter Fahrenheit Temperature: ')
+fahr = float(inp)
+cel = (fahr - 32.0) * 5.0 / 9.0
+print(cel)
+```
+
+Khi nhập đúng input:
+```py
+Enter Fahrenheit Temperature: 50
+10.0
+```
+
+Khi nhập sai sẽ nhận được thông báo lỗi 
+```py
+Enter Fahrenheit Temperature: ah
+Traceback (most recent call last):
+  File "/home/haidd/python/python.py", line 2, in <module>
+    fahr = float(inp)
+ValueError: could not convert string to float: 'ah'
+```
+
+Khi đó, ta nên sử dụng `try-except` để tránh trường hợp nhập sai sẽ bị dừng chương trình
