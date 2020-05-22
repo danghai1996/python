@@ -172,4 +172,39 @@ OUTPUT
 Total:  119
 ```
 
-## 
+## Bài tập
+### Bài 1
+Viết chương trình nhập vào các số đến khi nhập `done`. Sau đó, in ra tổng, số lượng, trung bình
+
+```py
+total = 0
+count = 0
+avg = 0
+
+while True:
+    num = input('Enter a number: ')
+    if num == 'done':
+        break
+    
+    try:
+        num = float(num)
+        total = total + num
+        count = count + 1
+    except:
+        print('Bad data')
+
+avg = total / count
+
+print(total, count, avg)
+```
+OUTPUT
+```
+Enter a number: 5
+Enter a number: 1
+Enter a number: bah
+Bad data
+Enter a number: 1
+Enter a number: 2
+Enter a number: done
+9.0 4 2.25
+```
